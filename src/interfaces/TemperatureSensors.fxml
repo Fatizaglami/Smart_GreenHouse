@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AllCategoriesController">
+   <children>
+      <AnchorPane prefHeight="492.0" prefWidth="624.0">
+         <children>
+            <Label layoutX="205.0" layoutY="33.0" prefHeight="30.0" prefWidth="179.0" text="Disponibilités" textFill="#448043">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableCapteurs" layoutX="11.0" layoutY="180.0" prefHeight="306.0" prefWidth="532.0" stylesheets="@../application/application.css">
+              <columns>
+                <TableColumn fx:id="cap_id" prefWidth="60.0" text="id_cap" />
+                <TableColumn fx:id="cap_type" prefWidth="82.0" text="type_capteur" />
+                  <TableColumn fx:id="cap_prix" prefWidth="90.0" text="prix_capteur" />
+                  <TableColumn fx:id="cap_desc" prefWidth="178.0" text="Description" />
+                  <TableColumn fx:id="cap_quantite" prefWidth="121.0" text="Quantite" />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="afficheButton" layoutX="362.0" layoutY="101.0" onAction="#showCapteur" styleClass="buttons" stylesheets="@../application/application.css" text="afficher les capteurs disponibles" />
+            <TextField fx:id="typeTextField" layoutX="29.0" layoutY="101.0" prefHeight="25.0" prefWidth="327.0" promptText="Entrez le type du capteur" styleClass="text-field" stylesheets="@../application/application.css" />
+            <JFXButton fx:id="infosButton" layoutX="547.0" layoutY="208.0" onAction="#showInfosCapteur" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

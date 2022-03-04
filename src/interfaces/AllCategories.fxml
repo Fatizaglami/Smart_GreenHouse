@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="445.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AllCategoriesController">
+   <children>
+      <AnchorPane fx:id="allcatAnch" prefHeight="529.0" prefWidth="679.0">
+         <children>
+            <Pane layoutX="49.0" layoutY="-379.0" prefHeight="536.0" prefWidth="427.0" rotate="56.3" style="-fx-background-color: #2E8B57; -fx-background-radius: 100;" />
+            <JFXButton fx:id="air_button" layoutX="422.0" layoutY="80.0" prefHeight="169.0" prefWidth="182.0" styleClass="button1" stylesheets="@../application/application.css" />
+            <Label fx:id="air_label" layoutX="449.0" layoutY="215.0" text="Air humidity sensor">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="99.0" fitWidth="141.0" layoutX="464.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Air%20humidity%20sensor.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="sol_button" layoutX="53.0" layoutY="285.0" prefHeight="169.0" prefWidth="182.0" styleClass="button1" stylesheets="@../application/application.css" />
+            <Label fx:id="sol_label" layoutX="73.0" layoutY="426.0" prefHeight="17.0" prefWidth="135.0" text="Sol humidity sensor">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="121.0" fitWidth="147.0" layoutX="84.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Sol%20humidity%20sensor.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="light_button" layoutX="422.0" layoutY="285.0" prefHeight="169.0" prefWidth="182.0" styleClass="button1" stylesheets="@../application/application.css" />
+            <Label fx:id="light_label" alignment="CENTER" contentDisplay="CENTER" layoutX="446.0" layoutY="426.0" prefHeight="17.0" prefWidth="121.0" text="Light sensor">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="108.0" fitWidth="128.0" layoutX="449.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Light%20sensor.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="temperatureButton" layoutX="118.0" layoutY="252.0" onAction="#showInfosTemperature" prefHeight="25.0" prefWidth="63.0" styleClass="buttons" stylesheets="@../application/application.css" text="More" textFill="#f9fcf8" />
+            <JFXButton fx:id="tem_button" layoutX="54.0" layoutY="80.0" prefHeight="169.0" prefWidth="182.0" styleClass="button1" stylesheets="@../application/application.css" text="Button" />
+            <ImageView fitHeight="109.0" fitWidth="108.0" layoutX="91.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Temperature%20sensor.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="temp_label" layoutX="78.0" layoutY="215.0" text="temperature">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="airButton" layoutX="474.0" layoutY="252.0" onAction="#showInfosAir" prefHeight="25.0" prefWidth="79.0" styleClass="buttons" stylesheets="@../application/application.css" text="More" textFill="#f9fcf8" />
+            <JFXButton fx:id="solButton" layoutX="113.0" layoutY="465.0" onAction="#showInfosSol" prefHeight="25.0" prefWidth="63.0" styleClass="buttons" stylesheets="@../application/application.css" text="More" textFill="#f9fcf8" />
+            <JFXButton fx:id="lghitButton" layoutX="482.0" layoutY="465.0" onAction="#showInfosLight" prefHeight="25.0" prefWidth="63.0" styleClass="buttons" stylesheets="@../application/application.css" text="More" textFill="#f9fcf8" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

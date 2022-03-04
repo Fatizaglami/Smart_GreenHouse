@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="445.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AcceuilAdminController">
+   <children>
+      <Label layoutX="28.0" layoutY="27.0" styleClass="backgrnd" stylesheets="@../application/application.css" text="Visualiser" textFill="#417e58">
+         <font>
+            <Font name="Berlin Sans FB" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cin_client" layoutX="218.0" layoutY="59.0" prefHeight="25.0" prefWidth="132.0" promptText="Entrer le cin du client" styleClass="text-field" stylesheets="@../application/application.css" />
+      <Label layoutX="17.0" layoutY="98.0" text="Selectionner le type de capteur à visualiser :">
+         <font>
+            <Font name="Ebrima" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="63.0" prefHeight="17.0" prefWidth="132.0" text="Entrer le cin du client :" />
+      <FontAwesomeIconView fill="#417e58" glyphName="HOME" layoutX="8.0" layoutY="43.0" size="18" />
+      <Button layoutX="342.0" layoutY="142.0" mnemonicParsing="false" onMouseClicked="#voirGraph" prefHeight="25.0" prefWidth="66.0" styleClass="buttons" stylesheets="@../application/application.css" text="Visualiser" />
+      <ComboBox fx:id="SelCapteur" layoutX="258.0" layoutY="94.0" prefWidth="150.0" promptText="Capteur" />
+      <TextField fx:id="id_serre" layoutX="579.0" layoutY="59.0" prefHeight="25.0" prefWidth="132.0" promptText="Entrer l'id serre" styleClass="text-field" stylesheets="@../application/application.css" />
+      <Label layoutX="432.0" layoutY="63.0" prefHeight="17.0" prefWidth="132.0" text="Entrer l'id de la serre :" />
+   </children>
+</AnchorPane>

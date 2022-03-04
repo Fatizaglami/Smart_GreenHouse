@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CommandeController">
+   <children>
+      <AnchorPane prefHeight="492.0" prefWidth="624.0">
+         <children>
+            <TableView fx:id="tableSerres" layoutX="12.0" layoutY="116.0" prefHeight="244.0" prefWidth="599.0" stylesheets="@../application/application.css">
+              <columns>
+                <TableColumn fx:id="id_com" prefWidth="110.0" text="num_commande" />
+                <TableColumn fx:id="nom_cli" prefWidth="64.66665649414062" text="nom" />
+                  <TableColumn fx:id="prenom_cli" prefWidth="99.0" text="prenom" />
+                  <TableColumn fx:id="cin" prefWidth="76.0" text="cin" />
+                  <TableColumn fx:id="date" prefWidth="122.0" text="date_commande" />
+                  <TableColumn fx:id="clt_tele" prefWidth="127.0" text="phoneNumber" />
+              </columns>
+            </TableView>
+            <Label layoutX="38.0" layoutY="75.0" prefHeight="22.0" prefWidth="209.0" stylesheets="@../application/application.css" text="Commande à confirmer" textFill="#56a15c">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="showButton" layoutX="290.0" layoutY="431.0" onMouseClicked="#confirmer" prefHeight="25.0" prefWidth="107.0" styleClass="buttons" stylesheets="@../application/application.css" text="Confirmer" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

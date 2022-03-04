@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="492.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MyCartController">
+   <children>
+      <AnchorPane layoutX="-245.0" layoutY="-158.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="53.0" layoutY="29.0" prefHeight="39.0" prefWidth="111.0" text="My Cart" textFill="#3a802c">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="32.0" fitWidth="44.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/shopping-cart.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="productsTable" layoutX="6.0" layoutY="79.0" prefHeight="309.0" prefWidth="612.0" stylesheets="@../application/application.css">
+        <columns>
+          <TableColumn fx:id="id_paT" prefWidth="85.0" text="id" />
+          <TableColumn fx:id="id_clientT" prefWidth="104.0" text="id_client" />
+            <TableColumn fx:id="nameT" prefWidth="168.0" text="product_Name" />
+            <TableColumn fx:id="prixT" prefWidth="130.0" text="Prix" />
+            <TableColumn fx:id="quantiteT" prefWidth="124.0" text="Quantite " />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="buyNowButton" layoutX="481.0" layoutY="397.0" onAction="#buyNowAction" styleClass="buttons" stylesheets="@../application/application.css" text="Buy Now" />
+   </children>
+</AnchorPane>
